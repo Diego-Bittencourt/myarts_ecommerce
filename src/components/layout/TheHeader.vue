@@ -5,8 +5,8 @@
         <p v-else>Modo Escuro</p>
         </div>
         <ul class="flex h-full w-1/4">
-            <li>Sobre</li>
-            <li>Produtos</li>
+            <li><base-button link to="/about">Sobre</base-button></li>
+            <li><base-button link to="products">Produtos</base-button></li>
         </ul>
     </nav>
 </template>
