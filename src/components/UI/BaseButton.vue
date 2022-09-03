@@ -53,9 +53,18 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
+  height: 3rem;
+  width: 6rem;
   transition: all 0.3s ease-in;
   background-color: rgb(238, 236, 236);
   color: rgb(214, 16, 165);
+}
+
+a:hover,
+button:hover {
+  background-color: rgb(143, 18, 112);
+  border-color: #ddd;
+  color: #eee;
 }
 </style>
