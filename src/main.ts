@@ -5,6 +5,7 @@ import store from './store'
 import './assets/tailwind.css'
 import LandingPage from './pages/LandingPage.vue';
 import BaseButton from './components/UI/BaseButton.vue';
+import BaseCard from './components/UI/BaseCard.vue';
 
 const app = createApp(App);
 
@@ -24,6 +25,7 @@ library.add(faInstagram, faFacebook, faBoxOpen, faMoon, faSun);
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.component('landing-page', LandingPage);
 app.component('base-button', BaseButton);
+app.component('base-card', BaseCard);
 
 app.use(store);
 app.use(router);

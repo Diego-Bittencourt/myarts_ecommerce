@@ -2,7 +2,7 @@
   <header
     class="h-24 p-5 flex content-between border-red-50 w-screen text-gray-100"
   >
-    <div class="h-full text-6xl w-1/2 text-left myarts">My_Arts</div>
+    <div @click="goHome" class="cursor-default h-full text-6xl w-1/2 text-left myarts">My_Arts</div>
     <div class="w-1/4">
       <p v-if="isDarkMode"><font-awesome-icon icon="fa-solid fa-sun-bright" /></p>
       <p v-else><font-awesome-icon icon="fa-solid fa-moon" /></p>
@@ -30,6 +30,9 @@ export default defineComponent({
       this.isDarkMode = "black";
       console.log("works");
     },
+    goHome() {
+      this.$router.push('/');
+    }
   },
 });
 </script>
