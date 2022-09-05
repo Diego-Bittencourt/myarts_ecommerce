@@ -16,10 +16,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 /* import specific icons */
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
+import { faBoxOpen, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
-library.add(faInstagram, faFacebook, faBoxOpen);
+library.add(faInstagram, faFacebook, faBoxOpen, faMoon, faSun);
 
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.component('landing-page', LandingPage);

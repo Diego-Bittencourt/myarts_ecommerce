@@ -5,7 +5,7 @@
   <router-link v-if="link" :to="to">
     <slot></slot>
   </router-link>
-  <a v-if="outlink" :href="receivedlink" target="_blank">
+  <a v-if="outlink" :href="receivedlink" target="_blank" class="flex-col">
     <slot></slot>
   </a>
 </template>
